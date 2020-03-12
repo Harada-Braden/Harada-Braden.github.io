@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Ajax Requesting a JSON File">
+        <meta name="author" content="Braden Harada">
+            
+        <title>AJAX Requesting a JSON File</title>
+    
+        <!-- Custom style for this site -->
+        <link href="https://harada-braden.github.io/css/style.css" rel="stylesheet">
+	
+        <!-- Normalize CSS -->
+        <link href="https://harada-braden.github.io/css/normalize.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h3>Ajax Requesting a JSON File</h3>
+            <hr>
+        </header>
+        <nav>
+        </nav>
+        <main>
+            <div class="main_content">
+                <div class="col_left">
+                    <fieldset>
+                        <input type="button" onclick="getJSONFile()" value="Get Students" >
+                        <div id="div_students"></div>
+                        <br/>
+                    </fieldset>
+                </div>
+                <div class="col_right">
+                    <fieldset>
+                        <div><p>First Name: <input id="input_first_name" type="text" /></p><p>Last Name: <input id="input_last_name"  type="text" /></p><p>Cell: <input id="input_cell" type="text" /></p></div>
+                        <input type="button" onclick="AddToJSONFile()" value="Add Student" > 
+                    </fieldset>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            Winter 2020 | Braden Harada | CIT-261: Mobile Software Development | <a href="https://harada-braden.github.io/" target="_blank">Webpage on Github</a> | <a href="https://github.com/Harada-Braden/CIT-261" target="_blank">Code on Github</a>
+        </footer>
+    </body>
+    <script src="https://harada-braden.github.io/js_objects/ajax_requesting_json.js"></script>
+</html>

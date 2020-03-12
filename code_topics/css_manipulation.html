@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Manipulating CSS Class Properties Using JavaScript">
+        <meta name="author" content="Braden Harada">
+                
+        <title>Manipulating CSS Class Properties Using JavaScript</title>
+        
+        <!-- Custom style for this site -->
+        <link href="https://harada-braden.github.io/css/style.css" rel="stylesheet">
+        
+        <!--- Custom style sheet for this page --> 
+        <link href="https://harada-braden.github.io/css/css_manipulation.css" rel="stylesheet">
+        
+        <!-- Normalize CSS -->
+        <link href="https://harada-braden.github.io/css/normalize.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h3>Manipulating CSS Class Properties Using JavaScript</h3>
+            <hr>
+        </header>    
+        <div class="main_content">
+            <div class="col_left">
+            <img id="pic_of_the_family" src="https://harada-braden.github.io/images/family-pic.jpg" onmouseout="changeBorderBack()" width="50%" onmouseover="changeBorder()" alt="Family Pic" >
+            </div>
+            <div class="col_right" id="buttons">
+                <p><button id="thisButton" class="myButtons" type="button" onclick="doubleHeight()">Click here to double image size</button></p>
+                <p><button class="myButtons" type="button" onclick="returnToNormal()">Click here to go back to normal size</button></p>
+                <p><button class="myButtons" type="button" onclick="changeRadius()">Click here to change border radius</button></p>
+                <p><button class="myButtons" type="button" onclick="changeColor()">Click here to change button color</button></p>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            Winter 2020 | Braden Harada | CIT-261: Mobile Software Development | <a href="https://harada-braden.github.io/" target="_blank">Webpage on Github</a> | <a href="https://github.com/Harada-Braden/CIT-261" target="_blank">Github</a>
+        </footer>  
+    </body>
+    <script src="https://harada-braden.github.io/js_objects/css_manipulation.js"></script>
+</html>
