@@ -2,7 +2,7 @@
 <html lang="en-us">
 	<head>
 	<meta charset="utf-8" />
-		<title>Book of Mormon Calculator</title>
+		<title>BoM Calculator</title>
 
 		<script type="text/javascript">
 			/* Defining Table
@@ -31,6 +31,33 @@
 		</script>
 	</head>
     <body>
-        
-    </body>
+        <header>
+            <h3>Book of Mormon Study Calculator</h3>
+            <hr>
+        </header>
+        <nav>
+        </nav>
+        <main>
+            <div class="main_content">
+                <div class="col_left">
+                    <fieldset>
+                        <input type="button" onclick="getJSONFile()" value="Get Students" >
+                        <div id="div_students"></div>
+                        <br/>
+                    </fieldset>
+                </div>
+                <div class="col_right">
+                    <fieldset>
+                        <div><p>Days: <input id="Days" type="text" /></p><p>Months<input id="Months"  type="text" /></p></div>
+                        <input type="button" onclick="AddToJSONFile()" value="Add Student" > 
+                    </fieldset>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            Winter 2020 | Braden Harada | CIT-261: Mobile Software Development | <a href="https://harada-braden.github.io/ScriptureCalculator/scripturecalculator.html" target="_blank">Webpage on Github</a> | <a href="https://github.com/Harada-Braden/ScriptureCalculator/" target="_blank">Code on Github</a>
+        </footer>
+	</body>
+	<script src="https://harada-braden.github.io/js_objects/ajax_requesting_json.js"></script>
 </html>
