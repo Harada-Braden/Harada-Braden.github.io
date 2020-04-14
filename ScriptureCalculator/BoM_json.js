@@ -38,18 +38,11 @@ function changeColor()
 
 function bomcalc() {
     // Input from user
-    var text = document.getElementById('Days').value;
-    var text = document.getElementById('Months').value;
 
     // Convert text to Number
-    var d = parseFloat(text);
-    var m = parseFloat(text);
 
     // Variables for Pages and Chapters
-    var p = 531
-    var c = 239
 
     //Formula
-    var ps = 531 / d
-    var cs = 239 / d
+
 }
