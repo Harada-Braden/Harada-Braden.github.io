@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Braden Harada">
+		<!-- This page is for CIT-230:14 -->
+        <!-- Brother Bangerter's online class (Winter 2017) at BYU-Idaho -->
+	<title>Salmon River Adventures</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function(){
+            // All jQuery code goes here
+            $('.dropdownMenu').hover( function(){
+                // Mouseover
+                $(this).addClass('is-active');
+            }, function(){
+                // Mouseout
+                $(this).removeClass('is-active');
+            });
+            
+            $('.js-ref').on('click', function(e){
+                e.preventDefault();
+                $('.ref').hide();
+                $('.ref-' + $(this).data('ref')).show();
+            });
+        })
+    </script>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="body">
+    <div class="wrapper">
+	<header class="mainHeader">
+        <img class="logo" src="images/logo-salmonriveradventures.jpg">
+	</header>
+<div class="section-wrapper">
+    <section class="section-left">
+        <nav class="mainNav">
+            <ul>
+                <li><a href="http://ninjaslair.com/index.html">Ninja's Lair</a></li>
+                <li><a href="/salmonriveradventures.html" class="js-ref" data-ref="home">Salmon River Adventures (Home)</a></li>
+                <li><a href="#" class="js-ref" data-ref="prices">Prices</a></li>
+                <li class="dropdownMenu">Adventures
+                    <div class="submenu"><a href="#" class="js.ref" data-ref="shortTrip">Short Trip</a></div>
+                    <div class="submenu"><a href="#" class="js.ref" data-ref="dayTrip">Day Trip</a></div>
+                    <div class="submenu"><a href="#" class="js.ref" data-ref="overnight">Camp-out</a></div>
+                </li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#" class="js-ref" data-ref="reservations">Reservations</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+	<section class="section-center">
+        <div class="ref ref-home">
+            <p class="filling">Welcome to the home page of Salmon River Adventures! Whether you are just starting out or have years of experience with whitewater rafting, this is the place for you. We have several different runs for you to try, each with their own level of difficulty.
+            </p>
+            <p class="filling">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+        </div>
+        <div class="ref ref-prices">
+            <h1>Pricing</h1>
+                <p>Prices include tax, meals, gear, and guide expenses. All you need to do is bring yourself and/or your party and we provide the rest. We will even drop you off at the launch site and pick you up at the takeout point so you can ease your mind and just enjoy the ride!</p>
+        </div>
+        <div class="ref ref-reservations">
+            <p class="filling">    
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+                <label><div>Full Name: </div><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required ></label>
+                <label><div>Address: </div><input name="Address" type="text" value="" size="50" placeholder="Address" pattern="[a-zA-Z -._]{3,99}" required ></label>
+                <label><div>Email: </div><input name="email" type="email" value="" size="30" placeholder="zen@gmail.com" required ></label>
+                <label><div>Phone: </div><input name="phone" type="tel" value="" placeholder="1234567890" pattern="[0-9]{10, 20}" required ></label>
+            </fieldset>
+            <fieldset>
+                <legend><span>Party Information</span></legend>
+                <label><div>Number of People: </div><input name="employeeCount" type="number" ></label>
+                <label><div>Preferred Date: </div><input name="date" type="date" ></label>
+                <label><div>Credit Card: </div><input name="credit" type="number" autocomplete="off" ></label>
+                <label><div>Food Allergies: </div><input name="foodAllergies" type="text" value="" placeholder="Type of Allergy" pattern="[a-zA-Z -._]{3,99}"></label>
+            </fieldset></p>
+        </div>
+        <div class="ref ref-shortTrip">
+            <div class="filling">
+            <h3>Short Adventure:</h3>
+            <p>Actual river time is about 2 to 2.5 hours. It is a good idea to budget 3.5 to 4 hours of your time for this trip.</p>
+            <ul>
+                <li>1-6 people, $80 (per person)</li>
+                <li>7-15 people, $70 (per person)</li>
+                <li>16 or more people, $60 (per person)</li>
+            </ul><br><br>
+            <button><a class="btn" href="ref ref-reservations"></a>Reserve Now!</button>
+            </div>
+        </div>
+        <div class="ref ref-dayTrip">
+            <div class="filling">
+            <h3>Day Adventure:</h3>
+                <p>Actual river time is about 8 hours. It is a good idea to budget 10 hours of your time for this trip. There will be 2 short stops, one stop will be for a meal which is provided and included in the price of the ticket.</p>
+                <ul>
+                    <li>1-4 people, $200 (per person)</li>
+                    <li>5-9 people, $180 (per person)</li>
+                    <li>10 or more people, $150 (per person)</li>
+                </ul>
+            <button><a class="btn" href="Reserve Now"></a>Reserve Now!</button>
+            </div>
+        </div>
+        <div class="ref ref-overnight">
+        <h3>2-day, 1 night Camp-out:</h3>
+            <p>This is your get-a-way for a couple days. Expect to show up at our location around 9am and leave at about 6pm the next day. We will provide 4 meals which include: lunch and dinner on the first day, breakfast and lunch on the second day. We provide all of the necessary equipment for rafting, camping, and having a great experience.</p>
+            <ul>
+                <li>1-4 people, $350 (per person)</li>
+                <li>5-8 people, $325 (per person)</li>
+                <li>8 or more people, $300 (per person)</li>
+            </ul>
+        <button><a class="btn" href="Reserve Now"></a>Reserve Now!</button>
+        </div>
+	</section>
+    <section class="section-right">
+        <ul>
+            <li><a href="#"><i class="fa fa-thumbs-o-up"></i> Sign Up!</a></li>
+            <br>
+            <li>Connect:</li>
+            <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+            <br>
+            <li>Find us on:</li>
+            <li><a href="#"><i class="fa fa-tripadvisor"></i> Trip Advisor</a></li>
+            <li><a href="#"><i class="fa fa-yelp"></i> YELP</a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
+            <li><a href="https://goo.gl/maps/yectrBfRvdQ2"><i class="material-icons" style="font-size:13px">add_location</i> Google Maps</a></li>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4361433734857!2d-116.317995784444!3d45.42070877910046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a6c569b5b4cae5%3A0x3118ef58524f3a4!2s1000+Main+St%2C+Riggins%2C+ID+83549!5e0!3m2!1sen!2sus!4v1491595991771" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+        </ul>
+    </section>
+</div>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p class="footer-links">Related Links<br/>					
+                <a href="../index.html">More Links</a>
+                ·
+                <a href="#">Faq</a>								
+            </p>
+            <div class="footer-company-about">
+                <h4 class="footer-social-header">Connect with us on:</h4>
+                
+                <a href="#" class="footer-social-link"><i class="fa fa-facebook-square"></i></a>
+                <a href="#" class="footer-social-link"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="footer-social-link"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="footer-social-link"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <p class="footer-company-name">Salmon River Adventures &copy; 2017</p>
+        </div>
+        <div class="footer-right">
+            <div class="footer-link">
+                <a href="https://goo.gl/maps/yectrBfRvdQ2"><i class="fa fa-map-marker"></i>1000 S. Main St., Riggins, ID</a>
+            </div>
+            <div class="footer-link">
+                <i class="fa fa-phone"></i>
+                <p>(800) NO-CALLS</p>
+            </div>
+            <div class="footer-link">
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:har16139@byui.edu">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
